@@ -28,6 +28,8 @@ public class LoginServlet extends HttpServlet {
 
             session.setMaxInactiveInterval(INACTIVITY_TIMEOUT);
 
+            //System.out.print(" in doPOST of LoginServlet");
+
             resp.sendRedirect("/profile");
         }
     }
